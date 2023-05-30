@@ -1,0 +1,82 @@
+Ans 1. num = int(input("Enter a number: "))
+
+fact = 1
+for i in range(num, 0, -1):
+    fact = fact*i
+    
+print("\nFactorial of {}: {}".format(num, fact))
+
+
+Ans2. num = int(input("Enter a number: "))
+
+for i in range(1, 11):
+    print("{} x {} = {}".format(num, i, num*i))
+
+
+
+Ans3. fibo_length = int(input("Enter a length: "))
+
+a = 0
+b = 1
+print(a, end = ' ')
+print(b, end = ' ')
+while(fibo_length-2 > 0):
+    nt = a + b
+    print(nt, end = ' ')
+    a = b
+    b = nt
+    
+    fibo_length -= 1
+
+Ans4. import math
+
+       def fibo_check(num):
+    l = len(str(num))  ## l = number of digits of number
+    sum1 = 0 
+    temp_num = num
+    while(num > 0):
+        d = num % 10
+        sum1 += int(math.pow(d, l))
+        num = num // 10
+
+    if(sum1 == int(temp_num)):
+        return 1
+    else:
+        return 0
+
+
+
+   Ans5.low = int(input("Enter the lower value of range: "))
+high = int(input("Enter the higher value of range: "))
+
+print("\nFrom {} to {} following are the Armstrong Number:".format(low, high), end='\n')
+for i in range(low, high+1):
+    
+    if(fibo_check(i)):
+        print(i, end = ' ')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
