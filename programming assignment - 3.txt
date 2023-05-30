@@ -1,0 +1,60 @@
+Ans1. num = 10
+
+if(num > 0):
+    print(num, "is Positive")
+elif(num < 0):
+    print(num, "is Negative")
+else:
+    print(num, "is Zero")
+
+
+
+Ans2. num = 0
+
+if(num > 0):
+    print(num, "is Positive")
+elif(num < 0):
+    print(num, "is Negative")
+else:
+    print(num, "is Zero")
+
+
+Ans3. num = int(input("Enter a number: "))
+
+if(num % 2 == 0):
+    print(num, "is a Even Nummber")
+else:
+    print(num, "is an Odd Number")
+
+
+Ans4. year = 2020
+
+if(((year % 4 == 0) and (year % 100 != 0)) or (year % 400 == 0)):
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
+
+
+Ans4. num = int(input("Enter a number: "))
+
+isPrime = True
+
+if num <= 1:
+    print(num, "is neither prime nor composite")
+else:
+    d = 2
+    while(d*d <= num):
+        if(num%d==0):
+            isPrime = False
+            break
+        d = d + 1
+
+if(num > 1):
+    if(isPrime):
+        print(num, "is prime number")
+    else:
+        print(num, "is not prime number")
+        
+
+Ans5. for i in range(1, 100001):
+    print(i, end = ' ')
